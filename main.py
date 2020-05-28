@@ -7,7 +7,7 @@ import collections
 #       a) Generate a file in gexf format with a list of edges.
 #       b) generate a table of nodes in xlsx format that you can import into gephi.
 # Both documents share the element "id", so Gephi is able to associate the nodes
-# generated from the aristar document,  and the node table with the set of attributes.
+# generated from the edges document,  and the node table with the set of attributes.
 
 def grapher():
     files = os.listdir("data/")                                  # Open All files in directory "data" and list them
