@@ -27,7 +27,7 @@ def grapher():
     nx.write_gexf(graph, "edgest_table.gexf", encoding='utf-8', prettyprint=True)
 
     # EXPORT FULL DATASET (You can comment the line below, if you don't need this file
-    all_data.to_excel("final_frame.xlsx")
+    all_data.to_excel("edges_list.xlsx", index=Fale)
 
     # Generate a Nodes Table with attributes
 
@@ -50,7 +50,7 @@ def grapher():
     frames = [sites_dataset, keywords_dataset]
     nodes_table = pd.concat(frames)
 
-    nodes_table.to_excel("nodes_table.xlsx")
+    nodes_table.to_excel("nodes_table.xlsx", index=False)
     print("boilá!")
 
 grapher()
